@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: 'The Standout Founder <noreply@thestandoutfounder.com>',
       to: 'paula@thestandoutfounder.com',
-      replyTo: email,
+      reply_to: email,
       subject: `New contact from ${name}`,
       html: `
         <h2>New message from thestandoutfounder.com</h2>
